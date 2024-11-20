@@ -85,16 +85,29 @@
       </nav>
       <!--Menú lateral izquierdo-->
 
+      <!--Infromacion arriba-->
+      <br><br>
+      <div class="container-fluid container-lg text-center">
+        <img src="https://lh5.googleusercontent.com/mFeG1WwL67jdK3_-vnTOlLsS1XNKEutJxwqrF9vOfJjuCKSgx9tm3IBkZs0O4CqO6dVBm7uTYYuiC0GeCrOcb6A=w16383" alt="" class="img-fluid">
+      </div>
+      <div class="container-fluid container-lg text-center">
+            <h2 class="text-danger-emphasis "> Este sitio, ¿te ha sido útil? </h2>
+            <p>Es momento de evaluar como te ha ido. Completa este formulario de autoevaluación para ver que tanto has aprendido. 
+                Si fallas puedes repetirlo y revisar tus aciertos. Buena suerte.</p>
+            <p></p>
+      </div>
+
+
       <!--cuestionario-->
 
       <div class="container">
         <p></p>
-        <h1>Cuestionario de Autoevaluación</h1>
+        <h1 class="text-danger-emphasis ">Cuestionario de Autoevaluación</h1>
     
         <form id="quizForm">
             <!-- Pregunta 1 -->
             <div class="question">
-                <p><strong>¿Qué tiene que hacer antes de presentarte a la defensa de TFG?</strong></p>
+                <p><strong>¿Qué tiene que hacer antes de presentarte a la defensa de TFG? </strong><span style="color: red;">*</span></p> 
                 <label><input type="radio" name="q1" value="a"> Matricular el TFG, subir la documentación, escoger fecha para la defensa </label>
                 <label><input type="radio" name="q1" value="b"> Matricular el TFG, escoger cualquier fecha para la defensa</label>
                 <label><input type="radio" name="q1" value="c"> Presentar  el TFG ante el decano, escoger fecha para la defensa</label>
@@ -102,7 +115,7 @@
     
             <!-- Pregunta 2 -->
             <div class="question">
-                <p><strong>¿Quién es el responsable de determinar si un TFG tiene implicaciones éticas?</strong></p>
+                <p><strong>¿Quién es el responsable de determinar si un TFG tiene implicaciones éticas? </strong><span style="color: red;">*</span></p>
                 <label><input type="radio" name="q2" value="a"> El director de TFG</label>
                 <label><input type="radio" name="q2" value="b"> El estudiante</label>
                 <label><input type="radio" name="q2" value="c"> El tribunal evaluador</label>
@@ -110,13 +123,72 @@
     
             <!-- Pregunta 3 -->
             <div class="question">
-                <p><strong>¿Qué responsabilidad tiene el tutor en un TFG y una institución externa?</strong></p>
+                <p><strong>¿Qué responsabilidad tiene el tutor en un TFG y una institución externa? </strong><span style="color: red;">*</span></p>
                 <label><input type="radio" name="q3" value="a"> Solo debe firmar la memoria final del trabajo</label>
                 <label><input type="radio" name="q3" value="b"> Debe hacer un seguimiento continuo y velar por la idoneidad del trabajo</label>
                 <label><input type="radio" name="q3" value="c"> No tiene ninguna responsabilidad</label>
             </div>
             
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <p><strong>¿A cuántas convocatorias por curso puede aplicar un estudiante? </strong><span style="color: red;">*</span></p>
+                <label><input type="radio" name="q4" value="a"> 2 convocatorias por curso </label>
+                <label><input type="radio" name="q4" value="b"> 1 convocatorias por curso</label>
+                <label><input type="radio" name="q4" value="c"> 3 convocatorias por curso </label>
+            </div>
     
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <p><strong>Según la normativa de Ingeniería Informática ¿Cuántos créditos debe tener el estudiante pendientes para poder defender el TFG? </strong><span style="color: red;">*</span></p>
+                <label><input type="radio" name="q5" value="a"> 24 créditos totales</label>
+                <label><input type="radio" name="q5" value="b"> 18 créditos optativos como máximo </label>
+                <label><input type="radio" name="q5" value="c"> 30 créditos obligatorios</label>
+            </div>
+
+             <!-- Pregunta 6 -->
+             <div class="question">
+                <p><strong>¿Cuántos días tiene un estudiante para la reclamación de sus calificaciones? </strong><span style="color: red;">*</span></p>
+                <label><input type="radio" name="q6" value="a"> 5 días hábiles dedse la publicación</label>
+                <label><input type="radio" name="q6" value="b"> 3 días hábiles dede la publicación </label>
+                <label><input type="radio" name="q6" value="c"> 3 días naturales desde la publicación</label>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="question">
+                <p><strong>Para cada trabajo se nombrará un Tribunal, ¿Por cuantos miembros estará formado? </strong><span style="color: red;">*</span></p>
+                <label><input type="radio" name="q7" value="a"> 2 </label>
+                <label><input type="radio" name="q7" value="b"> 3 </label>
+                <label><input type="radio" name="q7" value="c"> 4 </label>
+                <label><input type="radio" name="q7" value="d"> 5 </label>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="question">
+                <p><strong>¿En qué idiomas se puede defender el TFG? </strong><span style="color: red;">*</span></p>
+                <label><input type="radio" name="q8" value="a"> Euskera, catellano o inglés </label>
+                <label><input type="radio" name="q8" value="b"> Euskera o castellano </label>
+                <label><input type="radio" name="q8" value="c"> Solo castellano </label>
+            </div>
+
+            <!-- Pregunta 9 -->
+            <div class="question">
+                <p><strong>"Matricula de Honor" será a partir de la nota </strong><span style="color: red;">*</span></p>
+                <label><input type="radio" name="q9" value="a"> 8 </label>
+                <label><input type="radio" name="q9" value="b"> 8,5</label>
+                <label><input type="radio" name="q9" value="c"> 9 </label>
+                <label><input type="radio" name="q9" value="d"> 9,5 </label>
+            </div>
+            
+            <!-- Pregunta 10 -->
+            <div class="question">
+                <p><strong> La revisión o reclamación de las calificaciones finales de los TFG se llevará a cabo </strong><span style="color: red;">*</span></p>
+                <label><input type="radio" name="q10" value="a"> Según lo previsto en la Normativa de la Universidad </label>
+                <label><input type="radio" name="q10" value="b"> Según el Tribunal</label>
+                <label><input type="radio" name="q10" value="c"> Según el Estudiante </label>
+                <label><input type="radio" name="q10" value="d"> Según el tutor del TFG </label>
+            </div>
+
+            <!--Boton de enviar-->
             <div class="button-container">
                 <button type="button" onclick="submitQuiz()">Enviar Respuestas</button>
             </div>
@@ -131,16 +203,23 @@
       function submitQuiz() {
           // Rspuestas correctas 
           const answers = {
-              q1: 'b',  //
+              q1: 'a',  
               q2: 'a', 
-              q3: 'b'   
+              q3: 'b',
+              q4: 'a',
+              q5: 'b',
+              q6: 'b',
+              q7: 'b',
+              q8: 'a',
+              q9: 'c',
+              q10: 'a'                                    
           };
-  
+        
           let score = 0;
           const form = document.getElementById('quizForm');
           const resultDiv = document.getElementById('result');
 
-          //Corregir cada pregunta
+          //Coger cada pregunta con su respuesta y corregir cada pregunta
           for (const question in answers) {
               const selectedOption = form.querySelector(`input[name="${question}"]:checked`);
               if (selectedOption && selectedOption.value === answers[question]) {
@@ -149,7 +228,7 @@
           }
   
           // Mostrar el resultado
-          resultDiv.innerHTML = `Tu puntuación es: ${score} de 3.`;
+          resultDiv.innerHTML = `Tu puntuación es: ${score} de 10.`;
       }
   </script>
 
