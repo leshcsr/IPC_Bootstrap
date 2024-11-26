@@ -96,6 +96,18 @@ label {
     background-size: cover;
     z-index: 1;
 }
+
+.background-image-aboutus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('banners/aboutus_banners.jpg');
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+}
   
   .header-background {
     font-size: 64pt;
@@ -116,6 +128,12 @@ label {
     @media (max-width: 576px) {
       font-size: 32pt;
     }
+  }
+
+  .section-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banners/aboutus_banners.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   .content {
