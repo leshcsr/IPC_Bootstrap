@@ -7,6 +7,57 @@ html body{
 footer {
     flex-shrink: 0; 
 }
+.section-header {
+  background-color: #f8f9fa;
+  padding: 120px 0;
+  text-align: center;
+}
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+a {
+  color: rgb(64, 4, 34);
+}
+.section-title {
+  font-size: 24px;
+  margin: 20px 0;
+}
+.content-text {
+  font-size: 16px;
+  color: #363c41;
+}
+.form{
+  font-family: Arial, sans-serif;        
+  margin: 20px;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+.containerform {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.question {
+  margin-bottom: 25px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
 .d-flex-column {
     display: flex;
     flex-direction: column;
