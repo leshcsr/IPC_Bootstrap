@@ -8,111 +8,141 @@
     <title>About Us</title>
 </head>
 <body>
-    <!--Menú lateral izquierdo-->
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid d-flex justify-content-start align-items-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <a class="navbar-brand" href="index.html">TFG</a>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="d-flex"><!--Contenedor flex-->
+    <nav class="sidebar d-none d-lg-block">
+      <div class="p-3">
+        <a class="navbar-brand" href="index.html">TFG</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="normativas.html">Consulta de normativas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendarios.html">Calendario de convocatorias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="memorias.html">Consulta de memorias de TFG anteriores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cuestionario.html">Cuestionario de autoevaluación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About us</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Menú colapsable para pantallas pequeñas -->
+    <nav class="navbar bg-body-tertiary d-lg-none fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">TFG</a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
             <div class="offcanvas-header">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="normativas.html">Consulta de normativas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="calendarios.html">Calendario de convocatorias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="memorias.html">Consulta de memorias de TFG anteriores</a>
-                </li>  
-                <li class="nav-item">
-                    <a class="nav-link" href="cuestionario.html">Cuestionario de autoevaluación</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!--Menú lateral izquierdo-->
-
-      <!--Encabezado-->
-      <div class="section-header" style="position: relative;">
-        <div style="position: relative; z-index: 1;">
-            <h1 class="header-background display-1 display-md-2 display-sm-3">About Us</h1>
-            <p style="color: white;"></p>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="normativas.html">Consulta de normativas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendarios.html">Calendario de convocatorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="memorias.html">Consulta de memorias de TFG anteriores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cuestionario.html">Cuestionario de autoevaluación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About us</a>
+                    </li>
+                </ul>
+              </div>
         </div>
       </div>
-      <!--/Encabezado-->
+    </nav>
+    <!--Menú lateral izquierdo-->
+    <div class="main-content"><!--Contenido-->
+    
+                <!--Encabezado-->
+                <div class="section-header" style="position: relative;">
+                  <div style="position: relative; z-index: 1;">
+                      <h1 class="header-background display-1 display-md-2 display-sm-3">About Us</h1>
+                  </div>
+                </div>
+                <!--/Encabezado-->
 
-      <!--Contenedor principal-->
-      <div class="container-fluid my-5 text-center"> 
-        <br><br>
-          <div class="container-fluid container-lg text-center">
-            <h3 class="text-danger-emphasis">Objetivo</h3>
-            <p class="text-center mx-auto" style="max-width: 600px;">El objetivo de este sitio web es ofrecer información sobre los Trabajos de Fin de Grado 
-              (TFG), recogida de fuentes de la UPV/EHU, sin ninguna intención de sustituirlas, ya que 
-              se construye como un ejercicio académico dentro del ámbito de la asignatura IPC. Este 
-              sitio no asume ninguna responsabilidad por la precisión o integridad de la información 
-              proporcionada y no debe ser utilizado como única fuente de consulta. Se recomienda siempre
-              contrastar la información con las fuentes oficiales de la UPV/EHU.
-            </p>
+                <!--Contenedor principal-->
+                <div class="container-fluid my-5 text-center"> 
+                  <br><br>
+                    <div class="container-fluid container-lg text-center">
+                      <h3 class="text-danger-emphasis">Objetivo</h3>
+                      <p class="text-center mx-auto" style="max-width: 600px;">El objetivo de este sitio web es ofrecer información sobre los Trabajos de Fin de Grado 
+                        (TFG), recogida de fuentes de la UPV/EHU, sin ninguna intención de sustituirlas, ya que 
+                        se construye como un ejercicio académico dentro del ámbito de la asignatura IPC. Este 
+                        sitio no asume ninguna responsabilidad por la precisión o integridad de la información 
+                        proporcionada y no debe ser utilizado como única fuente de consulta. Se recomienda siempre
+                        contrastar la información con las fuentes oficiales de la UPV/EHU.
+                      </p>
 
-            <br><br>
+                      <br><br>
 
-            <h3 class="text-danger-emphasis">Integrantes: </h3>
-            <ul class="text-start mx-auto" style="max-width: 600px;"> 
-              <li>Leslie del Carmen Sánchez Reyes</li>
-              <li>David Inca Pilco</li>
-              <li>Juan Pablo Zambrano Barajas</li>
-              <li>Marta Zulaica Palacios</li>
-            </ul>
+                      <h3 class="text-danger-emphasis">Integrantes: </h3>
+                      <ul class="text-start mx-auto" style="max-width: 600px;"> 
+                        <li>Leslie del Carmen Sánchez Reyes</li>
+                        <li>David Inca Pilco</li>
+                        <li>Juan Pablo Zambrano Barajas</li>
+                        <li>Marta Zulaica Palacios</li>
+                      </ul>
 
-            <br><br>
-            
-            <h3 class="text-danger-emphasis">Referencias </h3>
-            <p>Todo el contenido de esta página fue obtenido de los siguientes sitios:</p>
-            <ul class="text-start mx-auto" style="max-width: 600px;">
-              <li>Boletín Oficial del País Vasco. (2024, 10 de abril). Reglamento sobre la elaboración y defensa del trabajo fin de grado (N.º 71). Boletín Oficial del País Vasco.</li>
-              <li>Universidad del País Vasco. (2023, 16 de octubre). Normativa de trabajo fin de grado: Grado en Ingeniería Informática.</li>
-              <li>Universidad del País Vasco. (2023, 16 de octubre). Normativa de trabajo fin de grado: Grado en Inteligencia Artificial.</li>
-            </ul>
+                      <br><br>
+                      
+                      <h3 class="text-danger-emphasis">Referencias </h3>
+                      <p>Todo el contenido de esta página fue obtenido de los siguientes sitios:</p>
+                      <ul class="text-start mx-auto" style="max-width: 600px;">
+                        <li>Boletín Oficial del País Vasco. (2024, 10 de abril). Reglamento sobre la elaboración y defensa del trabajo fin de grado (N.º 71). Boletín Oficial del País Vasco.</li>
+                        <li>Universidad del País Vasco. (2023, 16 de octubre). Normativa de trabajo fin de grado: Grado en Ingeniería Informática.</li>
+                        <li>Universidad del País Vasco. (2023, 16 de octubre). Normativa de trabajo fin de grado: Grado en Inteligencia Artificial.</li>
+                      </ul>
+                  </div>
+                </div><!--/Contenedor principal-->
+    
+    </div>  <!--Cierre Main-->
+  </div><!--Cierre de flex-->
+                
+  <!--Footer-->
+    <footer class="bg-secondary text-light py-3">
+      <div class="container text-center">
+        <p class="mb-1">
+          Sitio web sobre TFG | Interacción Persona Computador | 
+          <a class="text-danger-emphasis" target="_blank" href="https://www.ehu.eus/es/">UPV/EHU</a>
+        </p>
+        <div>
+          <a href="https://www.instagram.com/upvehu_gara/" target="_blank" class="text-light mx-2">
+            <img src="https://ssl.gstatic.com/atari/images/sociallinks/instagram_white_28dp.png" alt="Instagram" width="28" height="28">
+          </a>
+          <a href="https://www.facebook.com/upvehu/" target="_blank" class="text-light mx-2">
+            <img src="https://ssl.gstatic.com/atari/images/sociallinks/facebook_white_28dp.png" alt="Facebook" width="28" height="28">
+          </a>
+          <a href="https://www.ehu.eus/" target="_blank" class="text-light mx-2">
+            <img src="https://www.afm.es/gestor/recursos/uploads/imagenes/empresas/logos/colaboradores/UPVEHU.png" alt="Website" width="28" height="28">
+          </a>
         </div>
-      </div><!--/Contenedor principal-->
-
-      <!--Footer-->
-      <footer class="bg-secondary text-light py-3">
-        <div class="container text-center">
-          <p class="mb-1">
-            Sitio web sobre TFG | Interacción Persona Computador | 
-            <a class="text-danger-emphasis" target="_blank" href="https://www.ehu.eus/es/">UPV/EHU</a>
-          </p>
-          <div>
-            <a href="https://www.instagram.com/upvehu_gara/" target="_blank" class="text-light mx-2">
-              <img src="https://ssl.gstatic.com/atari/images/sociallinks/instagram_white_28dp.png" alt="Instagram" width="28" height="28">
-            </a>
-            <a href="https://www.facebook.com/upvehu/" target="_blank" class="text-light mx-2">
-              <img src="https://ssl.gstatic.com/atari/images/sociallinks/facebook_white_28dp.png" alt="Facebook" width="28" height="28">
-            </a>
-            <a href="https://www.ehu.eus/" target="_blank" class="text-light mx-2">
-              <img src="https://www.afm.es/gestor/recursos/uploads/imagenes/empresas/logos/colaboradores/UPVEHU.png" alt="Website" width="28" height="28">
-            </a>
-          </div>
-        </div>
-      </footer>
-      <!--/Footer-->
-
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      </div>
+    </footer>
+  <!--/Footer-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

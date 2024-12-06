@@ -8,50 +8,78 @@
     <title>Inicio</title>
 </head>
 <body>
-    <!--Menú lateral izquierdo-->
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid d-flex justify-content-start align-items-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <a class="navbar-brand" href="index.html">TFG</a>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="d-flex"><!--Contenedor flex-->
+    <nav class="sidebar d-none d-lg-block">
+      <div class="p-3">
+        <a class="navbar-brand" href="index.html">TFG</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="normativas.html">Consulta de normativas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendarios.html">Calendario de convocatorias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="memorias.html">Consulta de memorias de TFG anteriores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cuestionario.html">Cuestionario de autoevaluación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About us</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Menú colapsable para pantallas pequeñas -->
+    <nav class="navbar bg-body-tertiary d-lg-none fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">TFG</a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
             <div class="offcanvas-header">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="normativas.html">Consulta de normativas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="calendarios.html">Calendario de convocatorias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="memorias.html">Consulta de memorias de TFG anteriores</a>
-                </li>  
-                <li class="nav-item">
-                    <a class="nav-link" href="cuestionario.html">Cuestionario de autoevaluación</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="normativas.html">Consulta de normativas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendarios.html">Calendario de convocatorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="memorias.html">Consulta de memorias de TFG anteriores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cuestionario.html">Cuestionario de autoevaluación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About us</a>
+                    </li>
+                </ul>
+              </div>
         </div>
-      </nav>
-      <!--Menú lateral izquierdo-->
-
-      <!--Encabezado-->
-      <div class="section-header" style="background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
-        <h1 class="header-background display-1 display-md-2 display-sm-3">INFO TFG</h1>
-        <p style="color: white;">Información sobre los Trabajos Fin de Grado en la UPV</p>
       </div>
-      <!--/Encabezado-->
+    </nav>
+    <!--Menú lateral izquierdo-->
+    <div class="main-content"><!--Contenido-->
+    
+            <!--Encabezado-->
+            <div class="section-header" style="background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+              <h1 class="header-background display-1 display-md-2 display-sm-3">INFO TFG</h1>
+              <p style="color: white;">Información sobre los Trabajos Fin de Grado en la UPV</p>
+            </div>
+            <!--/Encabezado-->
 
       <!--Contenedor principal-->
       <div class="container-fluid my-5 text-center">   
@@ -98,8 +126,9 @@
           Revisa la página oficial de la <a class="text-danger-emphasis" target="_blank" href="https://www.ehu.eus/es/">UPV/EHU</a> o póngase en contacto con la oficina competente
         </div>
         <br>
-    </div><!--/Contenedor principal-->
-
+      </div><!--/Contenedor principal-->
+    </div>  <!--Cierre Main-->
+  </div><!--Cierre de flex-->
 
     <!--Footer-->
       <footer class="bg-secondary text-light py-3">

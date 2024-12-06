@@ -4,6 +4,17 @@ html body{
 #main-content {
     flex: 1 0 auto; 
 }
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
 footer {
     flex-shrink: 0; 
 }
